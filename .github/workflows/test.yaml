@@ -11,9 +11,10 @@ jobs:
       - name: testing server ssh connection
         uses: appleboy/ssh-action@master
         with:
-          host: ailab
+          host: 118.70.181.146
           username: hoangnv
           key: ${{secrets.TEST_GITHUB_ACTION}}
+          passphrase: ${{secrets.PASSWORD}}
           port: 6789
           script: |
             cd /home/hoangnv
