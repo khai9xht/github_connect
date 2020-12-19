@@ -12,7 +12,7 @@ jobs:
         uses: appleboy/ssh-action@master
         with:
           host: 118.70.181.146
-          username: hoangnv
+          user: hoangnv
           key: ${{secrets.TEST_GITHUB_ACTION}}
           port: 6789
           script: |
