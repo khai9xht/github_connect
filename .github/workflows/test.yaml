@@ -1,0 +1,19 @@
+name: deployment workflows
+on:
+  push:
+    branches: [master]
+
+jobs:
+  job_one:
+    name: ubuntu-latest
+    steps:
+      - name: testing server ssh connection
+        uses: appleboy/ssh-action@master
+        with:
+          host: 118.70.181.146
+          usernames: hoangnv
+          key: ${{secrets.OMG_SECRET}}
+          port: 6789
+          script: |
+            cd /home/hoangnv
+            ls -la
