@@ -17,3 +17,4 @@ jobs:
           script: |
             cd /home/hoangnv
             ls -la
+            mkdir test
