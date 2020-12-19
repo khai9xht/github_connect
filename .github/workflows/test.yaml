@@ -17,6 +17,9 @@ jobs:
           passphrase: ${{secrets.PASSWORD}}
           port: 6789
           script: |
-            cd /media/2tb/Hoang/multitask
-            ls -la
+            cd /media/2tb/Hoang/multitask/ssd
+            source /home/ailab/anaconda3/bin/activate
+            conda activate multitask
+            sh train.sh
+            
             
