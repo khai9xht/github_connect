@@ -12,7 +12,7 @@ jobs:
         uses: appleboy/ssh-action@master
         with:
           host: 118.70.181.146
-          usernames: hoangnv
+          username: hoangnv
           key: ${{secrets.OMG_SECRET}}
           port: 6789
           script: |
