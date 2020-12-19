@@ -1,7 +1,7 @@
 name: deployment workflows
 on:
   push:
-    branches: [master]
+    branches: [khai9xht-patch-1]
 
 jobs:
   job_one:
@@ -18,4 +18,3 @@ jobs:
           script: |
             cd /home/hoangnv
             ls -la
-            mkdir test
