@@ -13,7 +13,7 @@ jobs:
         with:
           host: 118.70.181.146
           username: hoangnv
-          key: ${{secrets.OMG_SECRET}}
+          key: ${{secrets.TEST_GITHUB_ACTION}}
           port: 6789
           script: |
             cd /home/hoangnv
